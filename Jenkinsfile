@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = "learnwithvinod/customer-service"
+        DOCKER_IMAGE = "yog22cdac/customer-service"
         DOCKER_TAG = "${env.BUILD_NUMBER}"
-        DOCKER_CREDENTIALS_ID = 'docker-learnwithvinod'
+        DOCKER_CREDENTIALS_ID = 'yog22cdac'
     }
 
     stages {
@@ -83,3 +83,4 @@ pipeline {
         }
     }
 }
+
