@@ -4,7 +4,7 @@ pipeline {
     environment {
         DOCKER_IMAGE = "yog22cdac/customer-service"
         DOCKER_TAG = "${env.BUILD_NUMBER}"
-        DOCKER_CREDENTIALS_ID = 'yog22cdac'
+        DOCKER_CREDENTIALS_ID = 'dockerhub-push'
     }
 
     stages {
